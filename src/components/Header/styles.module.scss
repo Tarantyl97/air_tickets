@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  gap: 34px;
+  margin: 84px 0 0 276px;
+
+  &Title {
+    color: var(--colors-purple, #4E148C);
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}

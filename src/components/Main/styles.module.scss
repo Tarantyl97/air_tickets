@@ -1,0 +1,176 @@
+.main {
+    display: flex;
+    gap: 50px;
+    margin: 20.5px 0 0 276px;
+
+    &ChangeFlightsNav {
+        width: 235px;
+        border-radius: 10px;
+        background: var(--colors-light-lavender, #E8EBF2);
+        display: flex;
+        flex-direction: column;
+        padding: 19px;
+        font-family: Inter;
+        margin-bottom: 47px;
+
+        p {
+            color: var(--colors-purple, #4E148C);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin: 0 0 27px 0;
+        }
+
+        label {
+            color: #858AE3;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            display: flex;
+            align-items: center;
+            margin-bottom: 21px;
+        }
+    }
+
+    &ChangeFlightsInput {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    &ChangeFlightsInput + label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+      }
+
+      &ChangeFlightsInput + label::before {
+        content: '';
+        display: inline-block;
+        width: 21px;
+        height: 21px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #4E148C;
+        border-radius: 4px;
+        margin-right: 19px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 15px 15px;
+      }
+      
+      &ChangeFlightsInput:checked + label::before {
+        background-color: transparent;
+        background-image: url("../../images/arrow.svg");
+      }
+
+      &ChangeFlightsInputRadio {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    &ChangeFlightsInputRadio + label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+      }
+
+      &ChangeFlightsInputRadio + label::before {
+        content: '';
+        display: inline-block;
+        width: 21px;
+        height: 21px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #4E148C;
+        border-radius: 50%;
+        margin-right: 19px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 75% 75%;
+      }
+      
+      &ChangeFlightsInputRadio:checked + label::before {
+        background-color: transparent;
+        background-image: url("../../images/ellipse.svg");
+      }
+
+    &ChangeCompanyNav {
+        width: 235px;
+        border-radius: 10px;
+        background: #E8EBF2;
+        display: flex;
+        flex-direction: column;
+        padding: 19px;
+        font-family: Inter;
+
+        p {
+            color: #4E148C;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        label {
+            color: #858AE3;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            display: flex;
+            align-items: center;
+            margin-bottom: 21px;
+        }
+    }
+    
+    &ChangeFlightsFilters {
+        // background: #E8EBF2;
+        width: auto;
+        height: auto;
+        margin-bottom: 29px;
+    }
+
+    &ChangeFlightsFiltersBtn {
+        width: 242px;
+        height: 55px;
+        color: #4E148C;
+        cursor: pointer;
+        border: 1px solid #4E148C;
+        background: #E8EBF2;
+        padding: 0;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    &ChangeFlightsFiltersBtn:first-child {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    &ChangeFlightsFiltersBtn:last-child {
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    &ChangeFlightsFiltersBtnActive {
+        color: white;
+        background: #4E148C;
+    }
+
+    &MoreTicketsBtn {
+        border-radius: 10px;
+        background: #4E148C;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: white;
+        width: 100%;
+        height: 62px;
+        margin-top: 27px;
+    }
+}
