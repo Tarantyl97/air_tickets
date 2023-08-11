@@ -1,14 +1,16 @@
 .flightInfo {
     max-width: 727px;
-    height: 174px;
+    // height: 96px;
     border-radius: 10px;
     background: #E8EBF2;
-    padding: 38px 40px 40px 39px;
+    // padding: 38px 40px 40px 39px;
+    padding: 30px 40px 25px 39px;
     font-family: Inter;
     margin-bottom: 47px;
 
     &Price {
         display: flex;
+        justify-content: space-between;
         
         p {
             color: #4E148C;
@@ -18,6 +20,11 @@
             line-height: normal;
             margin: 0;
         }
+    }
+
+    &CompanyLogo {
+        height: 51px;
+        max-width: 180px;
     }
 
     &AboutFlight {
@@ -32,6 +39,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        margin: 0 0 9px 0;
     }
 
     &Value {
@@ -40,5 +48,24 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        margin: 0;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .flightInfo {
+        max-width: 616px;
+    }
+}
+
+@media screen and (max-width: 377px) {
+    .flightInfo {
+        padding: 30px 28px 25px 25px;
+
+        &CompanyLogo {
+            height: 30px;
+            max-width: 130px;
+        }
+    }
+    
 }

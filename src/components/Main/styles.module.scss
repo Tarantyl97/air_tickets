@@ -1,7 +1,7 @@
 .main {
     display: flex;
     gap: 50px;
-    margin: 20.5px 0 0 276px;
+    margin: 20.5px 5vw 0 19.7vw;
 
     &ChangeFlightsNav {
         width: 235px;
@@ -126,16 +126,20 @@
             margin-bottom: 21px;
         }
     }
+
+    &InfoBlock {
+        width: 727px;
+    }
     
     &ChangeFlightsFilters {
-        // background: #E8EBF2;
-        width: auto;
+        width: 100%;
         height: auto;
         margin-bottom: 29px;
+        display: flex;
     }
 
     &ChangeFlightsFiltersBtn {
-        width: 242px;
+        width: 33%;
         height: 55px;
         color: #4E148C;
         cursor: pointer;
@@ -173,4 +177,41 @@
         height: 62px;
         margin-top: 27px;
     }
+}
+
+@media screen and (max-width: 769px) {
+    .main {
+        margin: 27px 2.5vw 0 2.5vw;
+        flex-direction: column;
+        gap: 0;
+
+        
+    &ChangeFlightsNav {
+        display: none;
+      }
+
+    &ChangeCompanyNav {
+          display: none;
+    }
+
+    &ChangeFlightsFilters {
+        display: flex;
+    }
+
+    &ChangeFlightsFiltersBtn {
+        width: 230px;
+    }
+
+    &InfoBlock {
+        width: auto;
+    }
+
+    &MoreTicketsBtn {
+        max-width: 695px;
+        margin-bottom: 105px;
+    }
+
+    }
+
+    
 }

@@ -1,7 +1,7 @@
 .header {
   display: flex;
   gap: 34px;
-  margin: 84px 0 0 276px;
+  margin: 84px 0 0 19.7vw;
 
   &Title {
     color: var(--colors-purple, #4E148C);
@@ -11,4 +11,16 @@
     font-weight: 700;
     line-height: normal;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    justify-content: center;
+    margin-left: 0;
+
+    &Title {
+      display: none;
+    }
+  }
+  
 }
