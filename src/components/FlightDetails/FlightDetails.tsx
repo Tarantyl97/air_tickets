@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styles from './styles.module.scss';
+import styles from './styles.module.css';
 import { useSelector, useDispatch } from "react-redux";
 
 interface FlightDetails {

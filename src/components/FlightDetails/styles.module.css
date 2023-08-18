@@ -1,0 +1,138 @@
+.flightInfo {
+    max-width: 727px;
+    border-radius: 10px;
+    background: #E8EBF2;
+    padding: 30px 40px 25px 39px;
+    font-family: Inter;
+    margin-bottom: 47px;
+}
+
+.flightInfoPrice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flightInfoPrice p {
+    color: #4E148C;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.flightInfoCompanyLogo {
+    height: 51px;
+    max-width: 180px;
+}
+
+.flightInfoAboutFlight {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.flightInfoTitle {
+    color: #858AE3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 9px 0;
+}
+
+.flightInfoValue {
+    color: #4E148C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .flightInfo {
+        max-width: 616px;
+    }
+}
+
+@media screen and (max-width: 377px) {
+    .flightInfo {
+        padding: 30px 28px 25px 25px;
+    }
+
+    .flightInfoCompanyLogo {
+        height: 30px;
+        max-width: 130px;
+    }
+}
+
+/* // .flightInfo {
+//     max-width: 727px;
+//     border-radius: 10px;
+//     background: #E8EBF2;
+//     padding: 30px 40px 25px 39px;
+//     font-family: Inter;
+//     margin-bottom: 47px;
+
+//     &Price {
+//         display: flex;
+//         justify-content: space-between;
+        
+//         p {
+//             color: #4E148C;
+//             font-size: 32px;
+//             font-style: normal;
+//             font-weight: 700;
+//             line-height: normal;
+//             margin: 0;
+//         }
+//     }
+
+//     &CompanyLogo {
+//         height: 51px;
+//         max-width: 180px;
+//     }
+
+//     &AboutFlight {
+//         display: flex;
+//         justify-content: space-between;
+//         margin-top: 25px;
+//     }
+
+//     &Title {
+//         color: #858AE3;
+//         font-size: 16px;
+//         font-style: normal;
+//         font-weight: 500;
+//         line-height: normal;
+//         margin: 0 0 9px 0;
+//     }
+
+//     &Value {
+//         color: #4E148C;
+//         font-size: 16px;
+//         font-style: normal;
+//         font-weight: 500;
+//         line-height: normal;
+//         margin: 0;
+//     }
+// }
+
+// @media screen and (max-width: 768px) {
+//     .flightInfo {
+//         max-width: 616px;
+//     }
+// }
+
+// @media screen and (max-width: 377px) {
+//     .flightInfo {
+//         padding: 30px 28px 25px 25px;
+
+//         &CompanyLogo {
+//             height: 30px;
+//             max-width: 130px;
+//         }
+//     }
+    
+// } */

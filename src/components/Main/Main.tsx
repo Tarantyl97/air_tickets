@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import styles from './styles.module.scss';
+import styles from './styles.module.css';
 import FlightDetails from "../FlightDetails/FlightDetails.tsx";
 import { useSelector } from "react-redux";
 

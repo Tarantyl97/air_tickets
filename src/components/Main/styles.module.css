@@ -2,6 +2,222 @@
     display: flex;
     gap: 50px;
     margin: 20.5px 5vw 0 19.7vw;
+}
+
+.mainChangeFlightsNav {
+    width: 235px;
+    border-radius: 10px;
+    background: var(--colors-light-lavender, #E8EBF2);
+    display: flex;
+    flex-direction: column;
+    padding: 19px;
+    font-family: Inter;
+    margin-bottom: 47px;
+}
+
+.mainChangeFlightsNav p {
+    color: var(--colors-purple, #4E148C);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 27px 0;
+}
+
+.mainChangeFlightsNav label {
+    color: #858AE3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+}
+
+
+.mainChangeFlightsInput {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.mainChangeFlightsInput + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.mainChangeFlightsInput + label::before {
+  content: '';
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #4E148C;
+  border-radius: 4px;
+  margin-right: 19px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 15px 15px;
+}
+      
+.mainChangeFlightsInput:checked + label::before {
+    background-color: transparent;
+    background-image: url("../../images/arrow.svg");
+}
+
+.mainChangeFlightsInputRadio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.mainChangeFlightsInputRadio + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.mainChangeFlightsInputRadio + label::before {
+    content: '';
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #4E148C;
+    border-radius: 50%;
+    margin-right: 19px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 75% 75%;
+}
+
+.mainChangeFlightsInputRadio:checked + label::before {
+    background-color: transparent;
+    background-image: url("../../images/ellipse.svg");
+}
+
+.mainChangeCompanyNav {
+width: 235px;
+border-radius: 10px;
+background: #E8EBF2;
+display: flex;
+flex-direction: column;
+padding: 19px;
+font-family: Inter;
+}
+
+.mainChangeCompanyNav p {
+    color: #4E148C;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.mainChangeCompanyNav label {
+    color: #858AE3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+}
+
+
+.mainInfoBlock {
+        width: 727px;
+}
+
+.mainChangeFlightsFilters {
+    width: 100%;
+    height: auto;
+    margin-bottom: 29px;
+    display: flex;
+}
+
+.mainChangeFlightsFiltersBtn {
+    width: 33%;
+    height: 55px;
+    color: #4E148C;
+    cursor: pointer;
+    border: 1px solid #4E148C;
+    background: #E8EBF2;
+    padding: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.mainChangeFlightsFiltersBtn:first-child {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.mainChangeFlightsFiltersBtn:last-child {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.mainChangeFlightsFiltersBtnActive {
+    color: white;
+    background: #4E148C;
+}
+
+.mainMoreTicketsBtn {
+    border-radius: 10px;
+    background: #4E148C;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: white;
+    width: 100%;
+    height: 62px;
+    margin-top: 27px;
+    }
+
+@media screen and (max-width: 769px) {
+    .main {
+        margin: 27px 2.5vw 0 2.5vw;
+        flex-direction: column;
+        gap: 0;
+    }
+
+        
+    .mainChangeFlightsNav {
+        display: none;
+      }
+
+    .mainChangeCompanyNav {
+          display: none;
+    }
+
+    .mainChangeFlightsFilters {
+        display: flex;
+    }
+
+    .mainChangeFlightsFiltersBtn {
+        width: 230px;
+    }
+
+    .mainInfoBlock {
+        width: auto;
+    }
+
+    .mainMoreTicketsBtn {
+        max-width: 695px;
+        margin-bottom: 105px;
+    }
+}
+/* .main {
+    display: flex;
+    gap: 50px;
+    margin: 20.5px 5vw 0 19.7vw;
 
     &ChangeFlightsNav {
         width: 235px;
@@ -214,4 +430,4 @@
     }
 
     
-}
+} */
